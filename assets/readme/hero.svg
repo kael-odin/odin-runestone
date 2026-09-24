@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+  <title id="t">ODIN RUNESTONE</title>
+  <desc id="d">Odin 系列 RUNESTONE —— 卢恩石碑 · 双语作品集模板，开屏问候 72 种语言</desc>
+  <rect width="1200" height="320" rx="26" fill="#0B0F1A"/>
+  <g transform="translate(56 54)">
+    <rect width="36" height="36" rx="9" fill="#A78BFA" fill-opacity="0.13" stroke="#A78BFA" stroke-opacity="0.55"/>
+    <path d="M8,3 L8,21 M8,4 L16,9 L8,13.5 L17,21" transform="translate(6 6)" fill="none" stroke="#A78BFA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="104" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, &quot;Consolas&quot;, monospace" font-size="17" letter-spacing="2.5" fill="#8B9BB4">ODIN SERIES · 03 / 05 · GITHUB PAGES</text>
+  <text x="56" y="156" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="54" font-weight="800" letter-spacing="1"><tspan fill="#F1F5F9">ODIN </tspan><tspan fill="#A78BFA">RUNESTONE</tspan></text>
+  <text x="56" y="200" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="25" font-weight="600" fill="#D7DEE8">卢恩石碑 · 双语作品集模板，开屏问候 72 种语言</text>
+  <text x="56" y="236" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="19" fill="#8B9BB4">Vite · React · GSAP 动效 · 中文优先 · 一键切英文</text>
+  <text x="56" y="276" font-family="ui-monospace, SFMono-Regular, Menlo, &quot;Consolas&quot;, monospace" font-size="17" fill="#5F6F8C">github.com/kael-odin/odin-runestone</text>
+  <g transform="translate(770 44)">
+    <rect width="374" height="232" rx="14" fill="#131A2B" stroke="#26334D"/>
+    <line x1="30" y1="206" x2="344" y2="206" stroke="#26334D" stroke-width="2"/>
+    <path d="M159 40 L215 40 Q227 40 226 54 L220 192 Q219 206 205 206 L169 206 Q155 206 154 192 L148 54 Q147 40 159 40 Z" fill="#1A2336" stroke="#26334D"/>
+    <path d="M172 58 L172 96 M172 60 L192 72 L172 84" fill="none" stroke="#A78BFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="168" y1="112" x2="206" y2="112" stroke="#8B9BB4" stroke-opacity="0.55" stroke-width="2.5"/>
+    <line x1="168" y1="130" x2="198" y2="130" stroke="#8B9BB4" stroke-opacity="0.45" stroke-width="2.5"/>
+    <line x1="168" y1="148" x2="206" y2="148" stroke="#8B9BB4" stroke-opacity="0.35" stroke-width="2.5"/>
+    <line x1="168" y1="166" x2="192" y2="166" stroke="#8B9BB4" stroke-opacity="0.28" stroke-width="2.5"/>
+    <path d="M70 206 L82 190 L94 206 M112 206 L122 196 L132 206" fill="none" stroke="#5F6F8C" stroke-width="2"/>
+    <path d="M262 206 L276 186 L290 206" fill="none" stroke="#5F6F8C" stroke-width="2"/>
+    <text x="18" y="219" font-family="ui-monospace, SFMono-Regular, Menlo, &quot;Consolas&quot;, monospace" font-size="16" fill="#5F6F8C" letter-spacing="1">carved story</text>
+  </g>
+</svg>
