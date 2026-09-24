@@ -87,6 +87,7 @@ const ContactMe = () => {
                       name={field.key}
                       id={field.key}
                       placeholder={t(field.placeholder.zh, field.placeholder.en)}
+                      required={!!field.required}
                       onChange={handleChange}
                       value={formData[field.key]}
                       className="w-full bg-transparent border-none text-accentv text-lg placeholder-placeholder focus:outline-none"
