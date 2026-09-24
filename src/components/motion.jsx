@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 // Letter-by-letter blur/fade reveal, mirroring the reference TextAnimate.
@@ -6,7 +6,6 @@ export function TextAnimate({
   as = "span",
   children,
   delay = 0,
-  once = true,
   by = "letter",
   className = "",
   ...rest

@@ -2,12 +2,16 @@ import { useGSAP } from '@gsap/react';
 import { Presentation } from 'lucide-react';
 import { useRef } from 'react';
 import gsap from 'gsap';
+
 import { useLang } from '../i18n/LanguageContext.jsx';
 import { projectsPage, projects } from '../i18n/content.js';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const { t } = useLang();
-  const items = projects.items.map((p, i) => ({
+  const items = projects.items.map((p) => ({
     Title: p.title,
     color: p.color,
     role: t(p.role.zh, p.role.en),
@@ -35,7 +39,7 @@ const Projects = () => {
             trigger: project,
             start: "top bottom-=100",
             end:"top center",
-            scrub0:0.5,
+            scrub: 0.5,
           },
           y: 20,
           opacity: 0,
@@ -61,7 +65,7 @@ const Projects = () => {
           key={project.Title}
           ref={el => projectRefs.current[index] = el}
           className="group relative w-full border border-bline rounded-lg p-6 flex flex-col-reverse sm:flex-row gap-8 cursor-pointer hover:shadow-lg transition-all duration-300 bg-bgcard"
-          onClick={() => window.location.href = project.link}
+          onClick={() => { if (project.link.startsWith('#')) { window.location.hash = project.link.slice(1); } else { window.location.href = project.link; } }}
           >
           {/* Content Section */}
           <div className={`flex flex-col gap-4 flex-1 justify-center ${index % 2 === 1 ? 'sm:order-2' : ''}`}>

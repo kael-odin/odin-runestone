@@ -137,7 +137,7 @@ export const projects = {
       role: { zh: "开发", en: "Development" },
       tech: "React.js, Tailwind CSS, GSAP",
       description: { zh: "展示项目与技能的个人作品集。", en: "Personal portfolio showcasing projects and skills." },
-      link: "/",
+      link: "#/",
     },
   ],
 };

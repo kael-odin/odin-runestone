@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-export const LanguageContext = createContext({ lang: "zh", setLang: () => {}, t: (zh, en) => zh });
+export const LanguageContext = createContext({ lang: "zh", setLang: () => {}, t: (zh) => zh });
 
 const STORAGE_KEY = "kael-portfolio-lang";
 

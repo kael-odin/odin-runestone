@@ -1,7 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useLang } from '../i18n/LanguageContext.jsx';
-import { intro, experience, tech, projects, caseStudies, social } from '../i18n/content.js';
+import { experience, tech, caseStudies, social } from '../i18n/content.js';
 import { Hero } from '../components/Hero';
 import Aboutme from '../components/Aboutme';
 import Projects from '../components/Projects';
@@ -91,7 +91,7 @@ function Home() {
                 <span className="text-4xl font-bold text-accentv">{item.metric}</span>
                 <span className="text-sm text-sectext">{t(item.metricLabel.zh, item.metricLabel.en)}</span>
               </div>
-              <h3 className="text-lg font-semibold text-primarytext mt-2">{item.title}</h3>
+              <h3 className="text-lg font-semibold text-primarytext mt-2">{t(item.title, item.enTitle)}</h3>
               <p className="text-sm text-sectext mt-1">{t(item.role.zh, item.role.en)}</p>
             </motion.a>
           ))}

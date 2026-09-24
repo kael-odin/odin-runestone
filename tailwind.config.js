@@ -4,6 +4,11 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  // content.js 里项目卡的 color 存的是色名（blue-500 等），运行时拼进
+  // text-${color} / hover:bg-${color}，必须 safelist 才会生成对应类
+  safelist: [
+    { pattern: /^(text|bg|hover:bg)-(blue|gray|purple|pink|green|orange|red|violet)-(200|300|400|500|600)$/ },
+  ],
   theme: {
     extend: {
       colors:{

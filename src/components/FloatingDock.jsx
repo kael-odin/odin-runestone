@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { IconBrandDiscord, IconBrandLinkedin, IconBrandGithub,IconLetterX,IconBrandInstagram  } from '@tabler/icons-react';
+import { useRef, useState } from 'react';
+import { IconBrandLinkedin, IconBrandGithub, IconLetterX, IconBrandInstagram } from '@tabler/icons-react';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { footer } from '../i18n/content.js';
 

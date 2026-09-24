@@ -82,7 +82,7 @@ const DetailedProjectCard = ({ project, index }) => {
   return (
   <div
     className="group relative w-full border border-bline rounded-lg p-6 flex flex-col-reverse sm:flex-row gap-8 cursor-pointer hover:shadow-lg transition-all duration-300 bg-bgcard"
-    onClick={() => window.location.href = project.link}
+    onClick={() => { if (project.link.startsWith('#')) { window.location.hash = project.link.slice(1); } else { window.location.href = project.link; } }}
   >
     <div className={`flex flex-col gap-4 flex-1 justify-center ${index % 2 === 1 ? 'sm:order-2' : ''}`}>
       <h1 className={`text-3xl font-bold text-${project.color} transition-colors duration-300 sm:text-6xl`}>
@@ -158,7 +158,7 @@ const Projects = () => {
     element.style.transition = 'transform 0.5s ease-out, width 0.5s ease-out';
   };
 
-  const handleMouseLeave = (element, index) => {
+  const handleMouseLeave = (element) => {
     setActiveDescription(null);
     element.style.transform = 'translateX(0%)';
     element.style.width = '100%';

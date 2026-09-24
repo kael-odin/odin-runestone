@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+
 import { motion } from 'framer-motion';
 import { useLang } from '../i18n/LanguageContext.jsx';
 import { footer, site } from '../i18n/content.js';
@@ -7,9 +7,7 @@ import { footer, site } from '../i18n/content.js';
 // blur-in reveal, colored headings, inline SVG social pills, two CTA rows
 // with rotating 45deg arrow circles, giant name watermark, bottom credits.
 function Footer() {
-  const { lang, t } = useLang();
-  const ref = useRef(null);
-  const year = new Date().getFullYear();
+  const { t } = useLang();
 
   const reveal = {
     hidden: { opacity: 0, filter: 'blur(8px)', x: -20 },

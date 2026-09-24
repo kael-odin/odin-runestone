@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useRef } from 'react';
 
-function Loading({ onLoadingComplete }) {
+function Loading() {
   // One greeting per language: CJK first, then a world tour covering every
   // major language by native-speaker population. No duplicate texts.
   const greetings = [

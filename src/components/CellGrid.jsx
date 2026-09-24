@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
 
 // Reference-style interactive cell grid: rows x cols of bordered cells that
 // glow from sky-600 rgba(14,165,233,0.3) on hover proximity, masked with a
