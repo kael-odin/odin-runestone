@@ -96,7 +96,7 @@ const Hero = () => {
   const beepRef = useRef();
   const tagRef = useRef(null);
   const navigate = useNavigate()
-  const { lang, t } = useLang();
+  const { t } = useLang();
   const gridCols = useRevealGridCols();
 
   useGSAP(() => {
@@ -152,20 +152,20 @@ const Hero = () => {
         <StaggerItem className="text-primarytext flex text-[10px] items-center justify-center gap-2 pr-6 sm:ml-10">
           <p className="sm:hidden hidden">{t('// 产品设计师', '// Product Designer')}<br />{t('与经理', '& Manager')}</p>
           <TextAnimate as="h1" className="whitespace-pre-wrap text-5xl font-semibold text-accentv md:text-6xl lg:text-8xl" delay={0.15}>
-            {lang === 'zh' ? 'AI 原生' : 'AI-NATIVE'}
+            {t(hero.line1.zh, hero.line1.en)}
           </TextAnimate>
           <p className="sm:text-xs md:text-sm lg:text-base hidden sm:block">{t('// 坐标', '// Based in')}<br />{t(hero.city.zh, hero.city.en)}</p>
         </StaggerItem>
 
         <StaggerItem>
           <TextAnimate as="h1" className="whitespace-pre-wrap text-5xl font-semibold text-accenty md:text-6xl lg:text-8xl" delay={0.3}>
-            {lang === 'zh' ? '产品经理' : 'PRODUCT'}
+            {t(hero.line2.zh, hero.line2.en)}
           </TextAnimate>
         </StaggerItem>
 
         <StaggerItem className="flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
           <TextAnimate as="h1" className="whitespace-pre-wrap text-5xl font-semibold text-accentl md:text-6xl lg:text-8xl" delay={0.45}>
-            {lang === 'zh' ? '经理' : 'MANAGER'}
+            {t(hero.line3.zh, hero.line3.en)}
           </TextAnimate>
           <div>
             <img
@@ -197,7 +197,7 @@ const Hero = () => {
         <StaggerItem className="text-primarytext flex text-[10px] items-center justify-center gap-4 sm:mr-24">
           <p>{t('// 产品使命', '// Product with')}<br />{t('目标与影响', 'Purpose & Impact')}</p>
           <TextAnimate as="h1" className="whitespace-pre-wrap text-5xl font-semibold text-accentc md:text-6xl lg:text-8xl" delay={0.6}>
-            {lang === 'zh' ? '& 设计师' : '& DESIGNER'}
+            {t(hero.line4.zh, hero.line4.en)}
           </TextAnimate>
         </StaggerItem>
       </StaggerGroup>

@@ -1,17 +1,18 @@
 import { useRef, useState } from 'react';
-import { IconBrandLinkedin, IconBrandGithub, IconLetterX, IconBrandInstagram } from '@tabler/icons-react';
+import { IconWorld, IconBrandGithub, IconMail } from '@tabler/icons-react';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { footer } from '../i18n/content.js';
 
 const FloatingDock = () => {
   const mouseX = useMotionValue(Infinity);
 
-  const icons = [
-    { Icon: IconLetterX , href: footer.socials[2].url, title: "X" },
-    { Icon: IconBrandGithub, href: footer.socials[1].url, title: "Github" },
-    { Icon: IconBrandLinkedin, href: footer.socials[0].url, title: "LinkedIn" },
-    { Icon: IconBrandInstagram , href: footer.socials[3].url, title: "Instagram" },
-  ];
+  // 与 footer.socials 数据源保持一致（数据驱动，不再按索引硬编码）
+  const dockIcons = { GitHub: IconBrandGithub, Blog: IconWorld, Email: IconMail };
+  const icons = footer.socials.map(({ label, url }) => ({
+    Icon: dockIcons[label] || IconWorld,
+    href: url,
+    title: label,
+  }));
 
   return (
     <motion.div

@@ -2,10 +2,10 @@
 // All display strings flow through here so the whole site can switch languages.
 
 export const site = {
-  name: { zh: "Kael Odin", en: "Kael Odin" },
-  location: { zh: "中国 · 远程", en: "China · Remote" },
+  name: { zh: "汤勇 Kael Odin", en: "Kael Odin" },
+  location: { zh: "中国 · 江苏 · 徐州", en: "Xuzhou, Jiangsu, China" },
   credit: { zh: "用心构建", en: "Crafted with care" },
-  email: "t445481611@gmail.com",
+  email: "sczxtangyong@163.com",
 };
 
 export const nav = {
@@ -45,17 +45,17 @@ export const splash = {
 };
 
 export const hero = {
-  hello: { zh: "你好，我是 Kael Odin", en: "Hello, I'm Kael Odin" },
+  hello: { zh: "你好，我是汤勇 Kael Odin", en: "Hello, I'm Kael Odin" },
   based: { zh: "坐标", en: "Based in" },
-  city: { zh: "中国", en: "China" },
-  line1: { zh: "全栈", en: "FULLSTACK" },
-  line2: { zh: "开发者", en: "DEVELOPER" },
-  line3: { zh: "AI 工程师", en: "AI ENGINEER" },
-  line4: { zh: "与设计师", en: "& DESIGNER" },
-  roleSide: { zh: "全栈开发\nAI 工程师\n设计师", en: "Full-Stack Developer\nAI Engineer\nDesigner" },
+  city: { zh: "中国 · 徐州", en: "Xuzhou, China" },
+  line1: { zh: "AI 应用", en: "AI-NATIVE" },
+  line2: { zh: "工程师", en: "ENGINEER" },
+  line3: { zh: "测试工程", en: "QA" },
+  line4: { zh: "& 开源", en: "& OPEN SOURCE" },
+  roleSide: { zh: "AI 应用工程师\n测试工程师\n开源爱好者", en: "AI Application Engineer\nQA Engineer\nOpen Source" },
   tagline: {
-    zh: "我打造近乎完美的数字应用，兼顾效率、美学与功能。",
-    en: "I create digital apps that border on Efficiency, Aesthetics and Functionality.",
+    zh: "先跑通，再讲清楚：把测试、AI 落地和自动化做成真正可用的东西。",
+    en: "Make it work first, explain it second — testing, AI adoption and automation that actually ships.",
   },
   tagWords: {
     efficiency: { zh: "效率", en: "Efficiency" },
@@ -68,45 +68,45 @@ export const hero = {
 export const intro = {
   blend: {
     pre: { zh: "我融合", en: "My blend of " },
-    design: { zh: "设计、", en: "design, " },
-    code: { zh: "代码、", en: "coding, " },
-    func: { zh: "功能", en: "functionality " },
+    design: { zh: "测试工程、", en: "QA engineering, " },
+    code: { zh: "AI 落地、", en: "AI adoption, " },
+    func: { zh: "自动化", en: "automation " },
     and: { zh: "与", en: "and " },
-    interaction: { zh: "交互", en: "interaction " },
-    post: { zh: "的专长，在技术领域独树一帜。", en: "expertise distinguishes me within the tech industry." },
+    interaction: { zh: "开源", en: "open source " },
+    post: { zh: "，在质量与效率之间找最优解。", en: "— optimizing for both quality and velocity." },
   },
   side: {
-    zh: "以卓越为念，在数字世界中成就非凡。让我们携手，把远见变成现实，持续创新。",
-    en: "Empowering success in the digital landscape. Together, we shape a visionary future, delivering on promises and continuously pioneering innovation.",
+    zh: "白天保障三条代理/数据采集产品线的质量，业余把想法做成开源工具。持续输出，相信小而可用的力量。",
+    en: "By day I guard the quality of three proxy/data product lines; after hours I ship small open-source tools. Ship often, ship small.",
   },
-  big1: { zh: "以代码构筑未来", en: "Coding the Future" },
-  big2: { zh: "以架构驱动创新", en: "Architecting Innovation" },
+  big1: { zh: "以测试守住质量", en: "Guard Quality" },
+  big2: { zh: "以 AI 提速落地", en: "Ship with AI" },
   para: {
-    zh: "我专注于打造量身定制的解决方案，在每个项目中不断突破极限，对卓越始终如一。",
-    en: "I specialize in engineering bespoke solutions, consistently pushing the limits in each project, with an unwavering dedication to prioritizing excellence.",
+    zh: "负责过 300+ 缺陷的发现与修复推动，也主导过大模型的私有化部署；既懂「怎么测」，也懂「怎么用 AI 提效」。",
+    en: "From driving 300+ defects to fix to deploying LLMs on-prem — I know how to test it and how to make AI speed it up.",
   },
   aboutCta: { zh: "关于我", en: "About Me" },
   whatido: { zh: "我的能力", en: "WHAT I DO" },
   cards: [
     {
-      title: { zh: "机器学习", en: "Machine Learning" },
+      title: { zh: "测试工程", en: "QA Engineering" },
       color: "text-blue-500",
-      description: { zh: "用人工智能把你的想法变成智能解决方案。", en: "Harnessing artificial intelligence to transform your ideas into intelligent solutions." },
+      description: { zh: "300+ 缺陷的发现与修复推动：接口、抓包、Playwright 自动化与 SQL 数据核对。", en: "300+ defects driven to fix: API testing, traffic analysis, Playwright automation and SQL validation." },
     },
     {
-      title: { zh: "全栈开发", en: "Full Stack Development" },
+      title: { zh: "AI 落地", en: "AI Adoption" },
       color: "text-purple-500",
-      description: { zh: "用最新技术与设计趋势，把愿景变为现实。", en: "Bringing your vision to life with the latest technology and design trends." },
+      description: { zh: "llama.cpp 私有化部署与调优、FastGPT 知识库、模型选型评测。", en: "llama.cpp private deployment & tuning, FastGPT knowledge base, model selection reviews." },
     },
     {
-      title: { zh: "设计师", en: "Designer" },
+      title: { zh: "自动化", en: "Automation" },
       color: "text-cyan-400",
-      description: { zh: "设计直观、高效、愉悦的界面。", en: "Designing interfaces that are intuitive, efficient, and enjoyable to use." },
+      description: { zh: "GitHub Actions 流水线：榜单、镜像站每日自动更新，零服务器成本。", en: "GitHub Actions pipelines: leaderboards and mirrors updating daily at zero server cost." },
     },
     {
-      title: { zh: "全能交付", en: "Full Package" },
+      title: { zh: "开源持续输出", en: "Open Source" },
       color: "text-yellow-300",
-      description: { zh: "设计、代码与交互兼修，在软件工程领域脱颖而出。", en: "My proficiency in design, coding, and interaction sets me apart within the domain of software engineering." },
+      description: { zh: "学术 Skill 每日榜、2205 条提示词中文镜像，先跑通再讲清楚。", en: "Academic skill leaderboard and a 2205-prompt Chinese mirror — make it work, then explain it." },
     },
   ],
 };
@@ -116,27 +116,27 @@ export const projects = {
   loadMore: { zh: "查看更多", en: "Load More" },
   items: [
     {
-      title: "DeepTutor",
+      title: "Academic Skills 榜单",
       color: "purple-500",
       role: { zh: "开发", en: "Development" },
-      tech: "React, Python, RAG",
-      description: { zh: "面向学习的 AI 伴读：沉浸式阅读与知识库问答。", en: "An AI study companion: immersive reading plus knowledge-base Q&A." },
-      link: "https://github.com/HKUDS/DeepTutor",
+      tech: "JavaScript, GitHub Actions, Agent Skills",
+      description: { zh: "学术论文与科研 Agent Skill 每日排行榜（85★），自动搜索过滤排名，每日更新。", en: "Daily-ranked leaderboard (85★) of academic research Agent Skills, auto-updated." },
+      link: "https://github.com/kael-odin/awesome-academic-research-skills",
     },
     {
-      title: "OpenMAIC",
+      title: "Prompts Chat 中文站",
       color: "gray-200",
       role: { zh: "开发", en: "Development" },
-      tech: "Python, 多智能体, 工具调用",
-      description: { zh: "本地多智能体协作框架：把代码库变成可执行的问答现场。", en: "A local multi-agent framework turning codebases into answerable workspaces." },
-      link: "https://github.com/",
+      tech: "Astro, i18n, 增量翻译流水线",
+      description: { zh: "2205 条公开提示词的中英对照镜像：全文搜索、一键复制、持续增量翻译。", en: "A zh/en mirror of 2205 public prompts: full-text search, one-click copy, incremental translation." },
+      link: "https://github.com/kael-odin/prompts-chat-zh",
     },
     {
-      title: "个人作品集",
+      title: "企业 AI 基础设施",
       color: "blue-500",
-      role: { zh: "开发", en: "Development" },
-      tech: "React.js, Tailwind CSS, GSAP",
-      description: { zh: "展示项目与技能的个人作品集。", en: "Personal portfolio showcasing projects and skills." },
+      role: { zh: "AI 落地", en: "AI Adoption" },
+      tech: "llama.cpp, FastGPT, RAG",
+      description: { zh: "大模型私有化部署与调优 + 企业知识库 + 模型选型评测，为 50+ 同事提供 AI 支持。", en: "On-prem LLM deployment & tuning plus a FastGPT knowledge base; AI support for 50+ colleagues." },
       link: "#/",
     },
   ],
@@ -155,7 +155,7 @@ export const tech = {
     mid: { zh: "的速度构建 Web 应用", en: " Webapps at " },
     cover: { zh: "极速", en: "Warping speed" },
   },
-  items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind", "Node.js", "MongoDB", "Firebase", "Git"],
+  items: ["Python", "JavaScript", "Playwright", "Postman", "llama.cpp", "FastGPT", "SQL", "Linux", "Git"],
 };
 
 export const experience = {
@@ -168,33 +168,33 @@ export const experience = {
   groups: [
     {
       id: "01",
-      title: { zh: "产品", en: "Product" },
+      title: { zh: "测试工程", en: "QA" },
       description: {
-        zh: "从零到一的产品管理：发现、战略、路线图与执行，用真实指标说话。",
-        en: "Zero-to-one product management — discovery, strategy, roadmapping and execution that moves real metrics.",
+        zh: "三条代理/数据采集产品线的功能测试全流程：需求评审到回归验证，累计 300+ 缺陷。",
+        en: "Full-cycle testing across three proxy/data product lines: 300+ defects found and driven to fix.",
       },
-      skills: ["Product Discovery", "Product Strategy", "Roadmapping", "User Research", "Analytics & Metrics", "Go-to-Market"],
+      skills: ["Playwright + pytest", "Postman", "Charles / DevTools 抓包", "SQL 数据校验", "Python 测试脚本", "Teambition 缺陷管理"],
       color: "text-accentv",
     },
     {
       id: "02",
-      title: { zh: "设计", en: "Design" },
-      description: { zh: "从白板到高保真原型：设计系统与微交互，让产品活起来。", en: "From whiteboard to high-fidelity prototypes — design systems and micro-interactions that make products feel alive." },
-      skills: ["Figma", "Figma Make", "UX Research", "UX Design", "Wireframing", "Prototyping", "Design Systems", "Interaction Design"],
+      title: { zh: "AI 落地", en: "AI Adoption" },
+      description: { zh: "大模型私有化部署与企业知识库：从量化调参到检索调优，让 AI 真正进业务。", en: "On-prem LLMs and enterprise knowledge bases: from quantization to retrieval tuning." },
+      skills: ["llama.cpp 部署调优", "FastGPT / RAG", "Prompt 工程", "模型评测与选型", "ComfyUI / SD / Midjourney"],
       color: "text-accentc",
     },
     {
       id: "03",
-      title: { zh: "工程", en: "Engineering" },
-      description: { zh: "生产级全栈开发：靠谱的排期，能跑的原型就是真正的软件。", en: "Production-grade full-stack development — realistic scoping and prototypes that are real working software." },
-      skills: ["Next.js", "React", "Node.js", "Flutter", "MongoDB", "SQL", "Python", "Tailwind CSS", "GSAP / Framer Motion"],
+      title: { zh: "开发", en: "Development" },
+      description: { zh: "把想法做成能用的小工具：小程序、内部系统与自动化流水线。", en: "Shipping small usable tools: mini programs, internal systems and automation pipelines." },
+      skills: ["Python", "Java", "JavaScript / HTML / CSS", "MySQL", "微信小程序", "Git / Linux"],
       color: "text-accenty",
     },
     {
       id: "04",
-      title: { zh: "智能", en: "AI" },
-      description: { zh: "AI 原生工作流：用 Claude Code 与 Figma Make 把数周迭代压缩到几天。", en: "AI-native workflows with Claude Code and Figma Make — compressing weeks of iteration into days so teams move forward faster." },
-      skills: ["Claude Code", "RAG", "AI Workflow Automation", "AI-Assisted Development", "AI Prototyping", "Prompt Engineering", "AI Product Workflows", "Rapid Iteration"],
+      title: { zh: "自驱学习", en: "Self-driven" },
+      description: { zh: "高考 660 入浙大竺可桢学院，肄业重考后半工半读读完 AI 本科；创业三年再转向 AI 行业。", en: "Gaokao 660 into Zhejiang University; re-took it and earned an AI degree while running a startup." },
+      skills: ["英语 CET-6", "AI 编程工具", "教培创业 100+ 学生", "快速上手新栈"],
       color: "text-accentp",
     },
   ],
@@ -205,28 +205,28 @@ export const caseStudies = {
   all: { zh: "全部案例", en: "All Case Studies" },
   items: [
     {
-      title: "Karnival BI · 可扩展洞察平台",
-      enTitle: "Karnival BI — Scalable Insights Platform",
-      role: { zh: "产品设计师 · 6+ 个月 · 2026", en: "Product Designer · 6+ Months · 2026" },
-      metric: "85%",
-      metricLabel: { zh: "用户采用率", en: "User Adoption Rate" },
-      link: "https://www.thegr8binil.me/CaseStudies/karnival-bi",
+      title: "学术 Skill 每日榜",
+      enTitle: "Academic Skills Daily Leaderboard",
+      role: { zh: "独立开发 · 持续维护 · 2026", en: "Solo build · maintained · 2026" },
+      metric: "85★",
+      metricLabel: { zh: "GitHub Star", en: "GitHub Stars" },
+      link: "https://github.com/kael-odin/awesome-academic-research-skills",
     },
     {
-      title: "问卷构建器重设计",
-      enTitle: "Survey Builder Redesign",
-      role: { zh: "产品设计负责人 & PM · 14 周 · 2025 Q3", en: "Lead Product Designer & PM · 14 Weeks · Q3 2025" },
-      metric: "45%",
-      metricLabel: { zh: "错误率下降", en: "Fewer Errors" },
-      link: "https://www.thegr8binil.me/CaseStudies/survey-builder-redesign",
+      title: "提示词中文镜像站",
+      enTitle: "Prompts Chat Chinese Mirror",
+      role: { zh: "独立开发 · Astro + 增量翻译 · 2026", en: "Solo build · Astro + incremental i18n · 2026" },
+      metric: "2205",
+      metricLabel: { zh: "条提示词中英对照", en: "Prompts mirrored (zh/en)" },
+      link: "https://github.com/kael-odin/prompts-chat-zh",
     },
     {
-      title: "可扩展游戏化平台",
-      enTitle: "Scalable Gamification Platform",
-      role: { zh: "产品设计负责人 · 1.5 个月 · 2026 Q1", en: "Product Design Lead · 1.5 Months · Q1 2026" },
-      metric: "4×",
-      metricLabel: { zh: "活动触达更广", en: "Broader Campaign Reach" },
-      link: "https://www.thegr8binil.me/CaseStudies/gamification-platform",
+      title: "企业 AI 基础设施",
+      enTitle: "Enterprise AI Infrastructure",
+      role: { zh: "主导落地 · llama.cpp + FastGPT · 2025.11 起", en: "Lead adoption · llama.cpp + FastGPT · since 2025.11" },
+      metric: "50+",
+      metricLabel: { zh: "名同事获得 AI 支持", en: "Colleagues supported" },
+      link: "",
     },
   ],
 };
@@ -234,8 +234,8 @@ export const caseStudies = {
 export const aboutPage = {
   hello: { zh: "你好！我是 Kael Odin", en: "Hello! I'm Kael Odin" },
   big: { zh: "以数字匠心，造卓越体验", en: "Crafting Digital Excellence" },
-  para1: { zh: "作为软件工程师，我擅长构建可扩展应用、提升用户体验、优化研发流程。", en: "As a Software Engineer, I excel in building scalable applications, enhancing user experiences, and streamlining development processes." },
-  para2: { zh: "设计、代码与交互的综合能力，让我在软件工程领域与众不同。", en: "My proficiency in design, coding, and interaction sets me apart within the domain of software engineering." },
+  para1: { zh: "我是汤勇（Kael Odin），一名 AI 应用工程师 / 测试工程师：负责三条代理/数据采集产品线的测试全流程，也主导过大模型私有化部署与企业知识库。", en: "I am Tang Yong (Kael Odin), an AI application engineer & QA engineer: full-cycle testing for three proxy/data product lines, plus on-prem LLM deployment and enterprise knowledge bases." },
+  para2: { zh: "教培创业三年、带教 100+ 名学生之后转向 AI 行业——我相信「先跑通，再讲清楚」，也相信持续输出的小项目比宏大的计划更有力量。", en: "After three years running a tutoring startup (100+ students), I pivoted to AI. I believe in shipping small and explaining later." },
   help: { zh: "我能帮你", en: "I can help you with" },
   services: [
     { title: { zh: "设计", en: "Design" }, description: { zh: "交付稳健好用的数字设计，与开发无缝衔接，每个项目既好看又好用。", en: "With a proven track record in designing websites, I deliver robust and user-friendly digital designs that are seamlessly integrated with development." } },
@@ -264,7 +264,7 @@ export const contactPage = {
   fail: { zh: "发送失败，请稍后再试。", en: "Failed to send message. Please try again later." },
   contactDetails: { zh: "联系方式", en: "CONTACT DETAILS" },
   socials: { zh: "社交媒体", en: "SOCIALS" },
-  email: "t445481611@gmail.com",
+  email: "sczxtangyong@163.com",
 };
 
 export const projectsPage = {
@@ -287,10 +287,9 @@ export const footer = {
   ],
   follow: { zh: "关注我", en: "Follow Me" },
   socials: [
-    { label: "LinkedIn", url: "https://www.linkedin.com/" },
-    { label: "GitHub", url: "https://github.com/" },
-    { label: "X", url: "https://x.com/" },
-    { label: "Instagram", url: "https://www.instagram.com/" },
+    { label: "GitHub", url: "https://github.com/kael-odin" },
+    { label: "Blog", url: "https://odin-saga.vercel.app/" },
+    { label: "Email", url: "mailto:sczxtangyong@163.com" },
   ],
   contactCard: { zh: "联系我", en: "Contact Me" },
   contactHint: { zh: "打个招呼吧！", en: "Say Hello!" },
@@ -301,8 +300,8 @@ export const footer = {
 };
 
 export const social = {
-  tagline: { zh: "// 设计，代码，\n连接", en: "// Design, Code,\nEngage" },
-  email: "t445481611@gmail.com",
+  tagline: { zh: "// 测试，AI，\n开源", en: "// QA, AI,\nOpen Source" },
+  email: "sczxtangyong@163.com",
 };
 
 export const notFound = {

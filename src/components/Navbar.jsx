@@ -32,9 +32,9 @@ function Navbar() {
   };
 
   const socials = [
-    { href: 'https://x.com/', label: 'X' },
-    { href: 'https://github.com/', label: 'GitHub' },
-    { href: 'https://www.linkedin.com/', label: 'LinkedIn' },
+    { href: 'https://github.com/kael-odin', label: 'GitHub' },
+    { href: 'https://odin-saga.vercel.app/', label: 'Blog' },
+    { href: 'mailto:sczxtangyong@163.com', label: 'Email' },
   ];
 
   return (
