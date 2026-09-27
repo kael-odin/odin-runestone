@@ -54,13 +54,13 @@ export const hero = {
   line4: { zh: "& 开源", en: "& OPEN SOURCE" },
   roleSide: { zh: "AI 应用工程师\n测试工程师\n开源爱好者", en: "AI Application Engineer\nQA Engineer\nOpen Source" },
   tagline: {
-    zh: "先跑通，再讲清楚：把测试、AI 落地和自动化做成真正可用的东西。",
-    en: "Make it work first, explain it second — testing, AI adoption and automation that actually ships.",
+    zh: "先跑通，再讲清楚：把测试、AI 落地和自动化做成真正可用的东西，兼顾",
+    en: "Make it work first, explain it second — QA, AI adoption and automation that actually ships, balancing ",
   },
   tagWords: {
-    efficiency: { zh: "效率", en: "Efficiency" },
-    aesthetics: { zh: "美学", en: "Aesthetics" },
-    functionality: { zh: "功能", en: "Functionality" },
+    efficiency: { zh: "质量", en: "Quality" },
+    aesthetics: { zh: "AI", en: "AI" },
+    functionality: { zh: "开源", en: "Open Source" },
   },
   connect: { zh: "联系我", en: "Let's Connect" },
 };
@@ -120,7 +120,8 @@ export const projects = {
       color: "purple-500",
       role: { zh: "开发", en: "Development" },
       tech: "JavaScript, GitHub Actions, Agent Skills",
-      description: { zh: "学术论文与科研 Agent Skill 每日排行榜（85★），自动搜索过滤排名，每日更新。", en: "Daily-ranked leaderboard (85★) of academic research Agent Skills, auto-updated." },
+      description: { zh: "学术论文与科研 Agent Skill 每日排行榜（110+★），自动搜索过滤排名，每日更新。", en: "Daily-ranked leaderboard (110+★) of academic research Agent Skills, auto-updated." },
+      image: "projects/aars-og.png",
       link: "https://github.com/kael-odin/awesome-academic-research-skills",
     },
     {
@@ -129,6 +130,7 @@ export const projects = {
       role: { zh: "开发", en: "Development" },
       tech: "Astro, i18n, 增量翻译流水线",
       description: { zh: "2205 条公开提示词的中英对照镜像：全文搜索、一键复制、持续增量翻译。", en: "A zh/en mirror of 2205 public prompts: full-text search, one-click copy, incremental translation." },
+      image: "projects/prompts-og.png",
       link: "https://github.com/kael-odin/prompts-chat-zh",
     },
     {
@@ -208,7 +210,7 @@ export const caseStudies = {
       title: "学术 Skill 每日榜",
       enTitle: "Academic Skills Daily Leaderboard",
       role: { zh: "独立开发 · 持续维护 · 2026", en: "Solo build · maintained · 2026" },
-      metric: "85★",
+      metric: "110+★",
       metricLabel: { zh: "GitHub Star", en: "GitHub Stars" },
       link: "https://github.com/kael-odin/awesome-academic-research-skills",
     },
