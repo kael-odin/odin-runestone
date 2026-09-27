@@ -1,5 +1,6 @@
 
 import { motion } from 'framer-motion';
+import { IconBrandGithub, IconWorld, IconMail } from '@tabler/icons-react';
 import { useLang } from '../i18n/LanguageContext.jsx';
 import { footer, site } from '../i18n/content.js';
 
@@ -15,6 +16,7 @@ function Footer() {
   };
 
   const socials = footer.socials;
+  const socialIcons = { GitHub: IconBrandGithub, Blog: IconWorld, Email: IconMail };
 
   const ArrowCircle = () => (
     <svg className="transition-all ease-in-out rotate-45 group-hover:rotate-0" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,23 +50,19 @@ function Footer() {
           <div className="flex items-start justify-between w-full gap-10">
             <motion.div className="flex flex-col" variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true }}>
               <h1 className="text-xl font-semibold text-bblue">{t(footer.follow.zh, footer.follow.en)}</h1>
-              <div className="flex flex-col items-start justify-center gap-3 mt-6 lg:flex-row lg:gap-10">
-                <div className="flex flex-col gap-3">
-                  {socials.slice(0, 2).map((s) => (
-                    <div key={s.label} className="flex items-center justify-center gap-2 mt-0 cursor-pointer group" onClick={() => window.open(s.url, '_blank')}>
-                      <span className="flex items-center justify-center w-7 h-7 rounded-full bg-primarytext text-black text-[10px] font-bold">{s.label[0]}</span>
+              <div className="flex flex-col items-start gap-3 mt-6">
+                {socials.map((s) => {
+                  const Icon = socialIcons[s.label] || IconWorld;
+                  const open = () => (s.url.startsWith('mailto:') ? (window.location.href = s.url) : window.open(s.url, '_blank', 'noopener'));
+                  return (
+                    <div key={s.label} className="flex items-center gap-2 cursor-pointer group" onClick={open}>
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primarytext text-black group-hover:bg-accentb group-hover:text-black transition-colors">
+                        <Icon size={18} stroke={1.8} />
+                      </span>
                       <h1 className="text-lg transition-all text-primarytext group-hover:text-accentb">{s.label}</h1>
                     </div>
-                  ))}
-                </div>
-                <div className="flex flex-col gap-3">
-                  {socials.slice(2, 4).map((s) => (
-                    <div key={s.label} className="flex items-center justify-center gap-2 mt-0 cursor-pointer group" onClick={() => window.open(s.url, '_blank')}>
-                      <span className="flex items-center justify-center w-7 h-7 rounded-full bg-primarytext text-black text-[10px] font-bold">{s.label[0]}</span>
-                      <h1 className="text-lg transition-all text-primarytext group-hover:text-accentb">{s.label}</h1>
-                    </div>
-                  ))}
-                </div>
+                  );
+                })}
               </div>
             </motion.div>
 
