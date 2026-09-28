@@ -10,13 +10,21 @@ const SKIP_KEY = 'kael-portfolio-splash-seen';
 //  - the full wait only happens once per session (sessionStorage), so
 //    navigating between pages never replays it
 function SplashGate({ children, minTime = 6000 }) {
-  let seenBefore = false;
-  try {
-    seenBefore = sessionStorage.getItem(SKIP_KEY) === '1';
-  } catch {
-    /* private mode: just show it */
-  }
-  const initial = seenBefore ? 1200 : minTime;
+  // Read the seen-flag ONCE, at mount. dismiss() writes sessionStorage, so
+  // re-reading it on every render flips `initial` (6000 → 1200) the moment
+  // the reveal finishes; that change re-runs the effect below, whose
+  // gsap.set() slams the just-faded-in content back to opacity: 0 — the
+  // "waited out the splash and got a black page" bug. A repeat visit starts
+  // at 1200 already, so the value never flips there and the page survived —
+  // exactly why skip-then-refresh looked fine.
+  const [initial] = useState(() => {
+    try {
+      return sessionStorage.getItem(SKIP_KEY) === '1' ? 1200 : minTime;
+    } catch {
+      /* private mode: just show it */
+      return minTime;
+    }
+  });
 
   const [show, setShow] = useState(true);
   const loadingRef = useRef(null);
@@ -24,7 +32,10 @@ function SplashGate({ children, minTime = 6000 }) {
   const dismissedRef = useRef(false);
 
   useEffect(() => {
-    gsap.set(contentRef.current, { opacity: 0, y: 20 });
+    // Same guard as the timeline: never undo a reveal that already happened.
+    if (!dismissedRef.current) {
+      gsap.set(contentRef.current, { opacity: 0, y: 20 });
+    }
 
     const dismiss = () => {
       if (dismissedRef.current || !loadingRef.current) return;
