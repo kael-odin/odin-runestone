@@ -52,7 +52,7 @@ export const hero = {
   line2: { zh: "工程师", en: "ENGINEER" },
   line3: { zh: "测试工程", en: "QA" },
   line4: { zh: "& 开源", en: "& OPEN SOURCE" },
-  roleSide: { zh: "AI 应用工程师\n测试工程师\n开源爱好者", en: "AI Application Engineer\nQA Engineer\nOpen Source" },
+  roleSide: { zh: "AI 应用 / 全栈工程师\n质量工程\n开源", en: "AI / Full-stack Engineer\nQuality Engineering\nOpen Source" },
   tagline: {
     zh: "先跑通，再讲清楚：把测试、AI 落地和自动化做成真正可用的东西，兼顾",
     en: "Make it work first, explain it second — QA, AI adoption and automation that actually ships, balancing ",
@@ -120,7 +120,7 @@ export const projects = {
       color: "purple-500",
       role: { zh: "开发", en: "Development" },
       tech: "JavaScript, GitHub Actions, Agent Skills",
-      description: { zh: "学术论文与科研 Agent Skill 每日排行榜（110+★），自动搜索过滤排名，每日更新。", en: "Daily-ranked leaderboard (110+★) of academic research Agent Skills, auto-updated." },
+      description: { zh: "学术论文与科研 Agent Skill 每日排行榜（225★），自动搜索过滤排名，每日更新。", en: "Daily-ranked leaderboard (225★) of academic research Agent Skills, auto-updated." },
       image: "projects/aars-og.png",
       link: "https://github.com/kael-odin/awesome-academic-research-skills",
     },
@@ -210,7 +210,7 @@ export const caseStudies = {
       title: "学术 Skill 每日榜",
       enTitle: "Academic Skills Daily Leaderboard",
       role: { zh: "独立开发 · 持续维护 · 2026", en: "Solo build · maintained · 2026" },
-      metric: "110+★",
+      metric: "225★",
       metricLabel: { zh: "GitHub Star", en: "GitHub Stars" },
       link: "https://github.com/kael-odin/awesome-academic-research-skills",
     },
@@ -221,6 +221,14 @@ export const caseStudies = {
       metric: "2205",
       metricLabel: { zh: "条提示词中英对照", en: "Prompts mirrored (zh/en)" },
       link: "https://github.com/kael-odin/prompts-chat-zh",
+    },
+    {
+      title: "Amazon 采集反爬指南",
+      enTitle: "Amazon Scraping Anti-bot Guide",
+      role: { zh: "创建并维护 · Thordata 官方仓库 · 2026", en: "Created & maintained · official Thordata repo · 2026" },
+      metric: "163★",
+      metricLabel: { zh: "GitHub Star", en: "GitHub Stars" },
+      link: "https://github.com/Thordata/how-to-bypass-amazon-captcha-when-scraping",
     },
     {
       title: "企业 AI 基础设施",
@@ -236,7 +244,7 @@ export const caseStudies = {
 export const aboutPage = {
   hello: { zh: "你好！我是 Kael Odin", en: "Hello! I'm Kael Odin" },
   big: { zh: "以数字匠心，造卓越体验", en: "Crafting Digital Excellence" },
-  para1: { zh: "我是汤勇（Kael Odin），一名 AI 应用工程师 / 测试工程师：负责三条代理/数据采集产品线的测试全流程，也主导过大模型私有化部署与企业知识库。", en: "I am Tang Yong (Kael Odin), an AI application engineer & QA engineer: full-cycle testing for three proxy/data product lines, plus on-prem LLM deployment and enterprise knowledge bases." },
+  para1: { zh: "我是汤勇（Kael Odin），一名 AI 应用 / 全栈工程师：白天负责三条代理/数据采集产品线的质量体系，业余把大模型、Agent 工具与全栈产品做到能跑、能用。", en: "I am Tang Yong (Kael Odin), an AI / full-stack engineer: by day I own the quality system for three proxy/data product lines; after hours I make LLMs, agent tools and full-stack products actually run." },
   para2: { zh: "教培创业三年、带教 100+ 名学生之后转向 AI 行业——我相信「先跑通，再讲清楚」，也相信持续输出的小项目比宏大的计划更有力量。", en: "After three years running a tutoring startup (100+ students), I pivoted to AI. I believe in shipping small and explaining later." },
   help: { zh: "我能帮你", en: "I can help you with" },
   services: [
